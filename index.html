@@ -6,6 +6,7 @@
   <title>MarkG PT | Mark Griffiths Personal Training</title>
   <meta name="description" content="Mark Griffiths (MarkG PT) — personal training, running coaching, strength & conditioning, mobility, and nutrition guidance." />
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 <body>
   <header class="hero">
@@ -132,34 +133,46 @@
     <section class="section" id="testimonials">
       <div class="container">
         <h2>Testimonials</h2>
-        <div class="quotes">
-          <figure class="quote">
-            <blockquote>
-              “Excellent personal trainer who will motivate and support you to achieve your goals! I hadn't run for over 3 years and found it difficult to motivate myself to get started again. The best choice I made was to select Mark as my personal trainer. I told Mark the goals I wanted to achieve for running, 5k and 10k and he designed a customised training plan that fit in with the days and hours I was available. Together we worked through the plan and I was able to hit all the goals I wanted, faster than I thought was possible. Mark's experience also helped me to not only run more efficiently but walk more efficiently, which significantly helped with lower back issues I was having. I'd highly recommend Mark for running and strength training.”
-            </blockquote>
-            <figcaption>— Amit V</figcaption>
-          </figure>
+        <div class="testimonials">
+          <details class="testimonial">
+  <summary>
+    <span class="testimonial__author">Amit V</span>
+    <span class="testimonial__excerpt">Excellent personal trainer who will motivate and support you to achieve your goals! I hadn't run for over 3 years and found it difficult to motivate myself to get started…</span>
+  </summary>
+  <div class="testimonial__body">
+    <p>“Excellent personal trainer who will motivate and support you to achieve your goals! I hadn't run for over 3 years and found it difficult to motivate myself to get started again. The best choice I made was to select Mark as my personal trainer. I told Mark the goals I wanted to achieve for running, 5k and 10k and he designed a customised training plan that fit in with the days and hours I was available. Together we worked through the plan and I was able to hit all the goals I wanted, faster than I thought was possible. Mark's experience also helped me to not only run more efficiently but walk more efficiently, which significantly helped with lower back issues I was having. I'd highly recommend Mark for running and strength training.”</p>
+  </div>
+</details>
 
-          <figure class="quote">
-            <blockquote>
-              “I set Mark a Marathon task of literally getting me from couch to completing a marathon. Mark was brilliant throughout the journey from struggling to run a mile to 26.2 miles in the London Marathon. His guidance, knowledge and support were fantastic. He is reliable and flexible and I’d highly recommend his services.”
-            </blockquote>
-            <figcaption>— Ian B</figcaption>
-          </figure>
+          <details class="testimonial">
+  <summary>
+    <span class="testimonial__author">Ian B</span>
+    <span class="testimonial__excerpt">I set Mark a Marathon task of literally getting me from couch to completing a marathon. Mark was brilliant throughout the journey from struggling to run a mile to 26.2 miles in…</span>
+  </summary>
+  <div class="testimonial__body">
+    <p>“I set Mark a Marathon task of literally getting me from couch to completing a marathon. Mark was brilliant throughout the journey from struggling to run a mile to 26.2 miles in the London Marathon. His guidance, knowledge and support were fantastic. He is reliable and flexible and I’d highly recommend his services.”</p>
+  </div>
+</details>
 
-          <figure class="quote">
-            <blockquote>
-              “Fantastic trainer, motivating, knowledgeable and organised. I worked with Mark for my first marathon, he provided a customised training plan based on what I wanted to achieve and more importantly to fit in with my other commitments. He provided structure and focus to my training, and supported me throughout the process, wether this was online or running with me during training sessions, he was even there at the finish line to congratulate me! I really enjoyed working with him, and he made the training much more enjoyable, and I will definitely use him again as I look at other events.”
-            </blockquote>
-            <figcaption>— James R</figcaption>
-          </figure>
+          <details class="testimonial">
+  <summary>
+    <span class="testimonial__author">James R</span>
+    <span class="testimonial__excerpt">Fantastic trainer, motivating, knowledgeable and organised. I worked with Mark for my first marathon, he provided a customised training plan based on what I wanted to achieve…</span>
+  </summary>
+  <div class="testimonial__body">
+    <p>“Fantastic trainer, motivating, knowledgeable and organised. I worked with Mark for my first marathon, he provided a customised training plan based on what I wanted to achieve and more importantly to fit in with my other commitments. He provided structure and focus to my training, and supported me throughout the process, wether this was online or running with me during training sessions, he was even there at the finish line to congratulate me! I really enjoyed working with him, and he made the training much more enjoyable, and I will definitely use him again as I look at other events.”</p>
+  </div>
+</details>
 
-          <figure class="quote">
-            <blockquote>
-              “Recommend, kind and patient trainer. I worked with Mark doing the couch to 5km. Mark really helped motivate me, and show me I really could run, something I never thought was possible. I really hated exercise but wanted to complete a 5km and he got me there. Not only did Mark help me with my running but also with strength training. I'm so much more confident now and feel much more healthy. Highly recommend!”
-            </blockquote>
-            <figcaption>— Amy P</figcaption>
-          </figure>
+          <details class="testimonial">
+  <summary>
+    <span class="testimonial__author">Amy P</span>
+    <span class="testimonial__excerpt">Recommend, kind and patient trainer. I worked with Mark doing the couch to 5km. Mark really helped motivate me, and show me I really could run, something I never thought was…</span>
+  </summary>
+  <div class="testimonial__body">
+    <p>“Recommend, kind and patient trainer. I worked with Mark doing the couch to 5km. Mark really helped motivate me, and show me I really could run, something I never thought was possible. I really hated exercise but wanted to complete a 5km and he got me there. Not only did Mark help me with my running but also with strength training. I'm so much more confident now and feel much more healthy. Highly recommend!”</p>
+  </div>
+</details>
         </div>
       </div>
     </section>
@@ -181,15 +194,10 @@
         <h3 class="h3">Areas Covered</h3>
         <p class="muted">Elstree, Borehamwood, Radlett, Shenley, Bushey, Stanmore.</p>
 
-        <div class="map">
-          <iframe
-            title="Area covered"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Elstree%2C%20Borehamwood%2C%20Radlett%2C%20Shenley%2C%20Bushey%2C%20Stanmore&output=embed">
-          </iframe>
-        </div>
-        <p class="small">Map is a simple embed (no API key required).</p>
+        <div class="map" role="region" aria-label="Areas covered map">
+  <div id="coverage-map"></div>
+</div>
+<p class="small">Interactive map uses OpenStreetMap (no API key). Markers show the towns covered.</p>
       </div>
     </section>
 
@@ -213,6 +221,38 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <script>
+    // Simple no-key map using OpenStreetMap tiles (Leaflet)
+    const areas = [
+      { name: "Elstree", lat: 51.653, lng: -0.275 },
+      { name: "Borehamwood", lat: 51.657, lng: -0.279 },
+      { name: "Radlett", lat: 51.685, lng: -0.317 },
+      { name: "Shenley", lat: 51.691, lng: -0.287 },
+      { name: "Bushey", lat: 51.644, lng: -0.360 },
+      { name: "Stanmore", lat: 51.616, lng: -0.318 },
+    ];
+
+    const mapEl = document.getElementById("coverage-map");
+    if (mapEl) {
+      const map = L.map("coverage-map", { scrollWheelZoom: false });
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      const bounds = [];
+      areas.forEach(a => {
+        const m = L.marker([a.lat, a.lng]).addTo(map);
+        m.bindPopup(a.name);
+        bounds.push([a.lat, a.lng]);
+      });
+
+      map.fitBounds(bounds, { padding: [30, 30] });
+    }
   </script>
 </body>
 </html>
