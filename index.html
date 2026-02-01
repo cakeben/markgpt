@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mark Griffiths Personal Training</title>
+  <meta name="description" content="Personal training with Mark Griffiths. Strength, conditioning, weight loss, and performance coaching." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="pill">Personal Training</p>
+        <h1>Mark Griffiths</h1>
+        <p class="subtitle">Personal Training & Coaching</p>
+        <p class="lead">
+          Practical coaching, simple programming, and accountability. Train for performance, feel better day-to-day,
+          and build habits that actually stick.
+        </p>
+        <div class="cta">
+          <a class="button" href="#services">Services</a>
+          <a class="button button--ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="hero__media" aria-label="Coach photo">
+        <img src="./assets/mark.jpg" alt="Mark Griffiths" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m Mark, a personal trainer focused on sustainable strength and conditioning. Whether your goal is
+          improving general fitness, losing weight, or performing better in sport, we’ll keep the plan clear,
+          measurable, and realistic.
+        </p>
+        <ul class="bullets">
+          <li>Strength & conditioning</li>
+          <li>Fat loss and body recomposition</li>
+          <li>Endurance support and hybrid training</li>
+          <li>Habit building, tracking, and accountability</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>1:1 Personal Training</h3>
+            <p>Tailored sessions built around your goals, experience, and schedule.</p>
+          </article>
+          <article class="card">
+            <h3>Programming</h3>
+            <p>Weekly plan + progression. Ideal if you’re training independently but want structure.</p>
+          </article>
+          <article class="card">
+            <h3>Online Coaching</h3>
+            <p>Check-ins, training plan, and accountability to keep you moving in the right direction.</p>
+          </article>
+        </div>
+        <p class="note">
+          Pricing varies by format and frequency. Get in touch and I’ll recommend the simplest option that fits.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Want to chat about goals, current training, or how to get started? Drop a message and I’ll get back to you.
+        </p>
+        <p class="contact">
+          <strong>Email:</strong> <a href="mailto:mark@example.com">mark@example.com</a>
+        </p>
+        <p class="small">
+          (Replace this email with Mark’s preferred contact address.)
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mark Griffiths Personal Training</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
