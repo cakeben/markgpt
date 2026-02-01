@@ -122,3 +122,22 @@ p { margin: 0 0 14px; line-height: 1.65; color: var(--muted); }
 
 .footer { padding: 22px 0 34px; }
 .footer p { margin: 0; font-size: 13px; color: rgba(232,238,252,0.55); }
+
+
+.note-inline { margin-top: 14px; }
+
+.h3 { margin: 18px 0 10px; font-size: 16px; color: var(--text); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+
+.chip { display: inline-block; padding: 8px 10px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.04); color: rgba(232,238,252,0.75); font-size: 13px; }
+
+.quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+
+@media (max-width: 860px) { .quotes { grid-template-columns: 1fr; } }
+
+.quote { margin: 0; border: 1px solid var(--border); background: rgba(255,255,255,0.04); border-radius: 14px; padding: 14px; }
+
+.quote blockquote { margin: 0; color: rgba(232,238,252,0.78); line-height: 1.6; }
+
+.quote figcaption { margin-top: 10px; color: rgba(232,238,252,0.55); font-size: 13px; }
