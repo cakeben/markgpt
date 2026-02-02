@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cakeben.github.io/markgpt/sitemap.xml
